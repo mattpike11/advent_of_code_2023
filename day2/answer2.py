@@ -23,10 +23,8 @@ for sentence in df["Picks"]:
     dum_num = ""
     current_game = df["Game"][iteration]
     iteration = iteration + 1
-    print("current_game: ", current_game)
     #iterate over each letter
     for index, char in enumerate(sentence):
-        print("dum_num: ",dum_num)
         if char in [",",";"]:
             dum_num = ""
         elif char.isdigit():
@@ -38,5 +36,5 @@ for sentence in df["Picks"]:
             current_game = 0
     tot = tot + current_game
 print(tot)
-            
+#2317
             
